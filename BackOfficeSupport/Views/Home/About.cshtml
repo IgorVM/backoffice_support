@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "О нас";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+</hgroup>
+
+<article>
+    <p>
+        Кто мы?
+    </p>
+    <p>
+        Мы великие программисты бэка - сердца холдинга Бизнес Партнер
+    </p>
+
+    <p>
+        Великолепная четверка программистов, которая может все. Нужно только хорошо попросить
+    </p>
+
+</article>
+
+<aside>
+    <h3>Куда еще заглянуть</h3>
+        <ul>
+        <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+        <li>@Html.ActionLink("Как нас найти", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Зарегистрируйтесь!", "Register", "Account")</li>
+    </ul>
+</aside>

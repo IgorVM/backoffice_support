@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Как нас найти";
+}
+
+<hgroup class="title">
+    <h1>@ViewBag.Title</h1>
+</hgroup>
+
+<article>
+    <p>
+        Нас лучше не искать, а оставлять ошибки и пожалания на этом сайте
+    </p>
+
+</article>
+
+<aside>
+    <h3>Куда еще заглянуть</h3>
+    <ul>
+        <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+        <li>@Html.ActionLink("О нас", "About", "Home")</li>
+        <li>@Html.ActionLink("Зарегистрируйтесь!", "Register", "Account")</li>
+    </ul>
+</aside>

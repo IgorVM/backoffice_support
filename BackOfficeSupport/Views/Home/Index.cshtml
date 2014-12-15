@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Сайт техподдержки пользователей бэка";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                На этом сайте Вы можете оставить заявку об ошибке на сайте 
+                <a href="http://backoffice.biznespartners.ru">Бэкофис</a>,
+                а также свои пожелания
+
+            </p>
+        </div>
+    </section>
+}
+<h3>Мы предлагаем следующее:</h3>
+<ol class="round">
+    <li class="one" style="height:30px">
+        @Html.ActionLink("Зарегистрируйтесь!", "Register", "Account") Никаких смс или спама на почту, все очень просто
+    </li>
+
+    <li class="two" style="height:30px">
+        Оставьте сообщение об ошибке или пожелание
+    </li>
+
+    <li class="three" style="height:30px">
+        Мы с Вами свяжемся!
+        Ждите!
+    </li>
+</ol>
