@@ -21,17 +21,17 @@ namespace MvcApplication1.Models
     [Table("UserProfile")]
     public class UserProfile
     {
-        [Key]
-        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
-        public int UserId { get; set; }
-        public string UserName { get; set; }
+        //[Key]fgh
+        //[DatabasfeGeneratedAttributeeGeneratedAttribute(DatabasfghfgeGeneratedOption.Identity)]fg
+        //public int UserId { get; set; }fufy
+        //public string UserName { get; set; }
     }
 
     public class RegisterExternalLoginModel
     {
-        [Required]
-        [Display(Name = "User name")]
-        public string UserName { get; set; }
+        //[Required]fghfghfgh
+        ///[////Display(Name = "User name")]yfhfg
+        ///public string UserName { get; set; }hfghfgh
 
         public string ExternalLoginData { get; set; }
     }
