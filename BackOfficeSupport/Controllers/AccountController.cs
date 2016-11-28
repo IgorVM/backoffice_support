@@ -23,7 +23,8 @@ namespace MvcApplication1.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
-            ViewBag.ReturnUrl = returnUrl;
+			//sdifgjsdifghsdioghsidghsido
+            ///s;dkgjsdfksdklfjksldfjfViewBag.ReturnUrl = returnUrl;
             return View();
         }
 

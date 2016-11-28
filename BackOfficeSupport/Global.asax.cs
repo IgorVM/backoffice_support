@@ -16,15 +16,13 @@ namespace MvcApplication1
     {
         protected void Application_Start()
         {
-            
+            //AreaRegistration.RegisterAllAreas();sdfm,sdfjksdfbfjisdjgdsfjkg
 
-			-------AuthConfig.RegisterAuth();
-			-------BundleConfig.RegisterBundles(BundleTable.Bundles);
-			-------RouteConfig.RegisterRoutes(RouteTable.Routes);
-			-------FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            -------WebApiConfig.Register(GlobalConfiguration.Configuration);
-			
-			-------AreaRegistration.RegisterAllAreas();
+            //WebApiConfig.Register(GlobalConfiguration.Configuration);asdasdas
+            //FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);asfdasdas
+            //RouteConfig.RegisterRoutes(RouteTable.Routes);adasdas
+            //BundleConfig.RegisterBundles(BundleTable.Bundles);asfcasdfasa
+            //AuthConfig.RegisterAuth();sdgsdfgsdffgsd
         }
     }
 }
