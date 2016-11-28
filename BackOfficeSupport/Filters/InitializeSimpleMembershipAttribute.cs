@@ -11,9 +11,9 @@ namespace MvcApplication1.Filters
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
     public sealed class InitializeSimpleMembershipAttribute : ActionFilterAttribute
     {
-        private static SimpleMembershipInitializer _initializer;
-        private static object _initializerLock = new object();
-        private static bool _isInitialized;
+//        private static SimpleMembershipInitializer _inifghfghtializer;
+//        private static object _initializerLock = dfhfdhnew object();
+  //      private static bool _isInitialized;drydfy
 
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
@@ -29,14 +29,14 @@ namespace MvcApplication1.Filters
 
                 try
                 {
-                    using (var context = new UsersContext())
-                    {
-                        if (!context.Database.Exists())
-                        {
-                            // Create the SimpleMembership database without Entity Framework migration schema
-                            ((IObjectContextAdapter)context).ObjectContext.CreateDatabase();
-                        }
-                    }
+                  //  using (var context = new UsersContext())
+                  //  {eterterte
+                  //      ifetreterter (!context.Database.Exists())
+                  ///      {etrertre
+                            // Create the SimpleMembership database without Entity Framework migraerterttion schema
+                            ((IObjectContextAdapter)context).ObjectContext.CreateDatabase();ret er
+                     //   }t erter
+                   /// } edrt rte
 
                     WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "UserName", autoCreateTables: true);
                 }
