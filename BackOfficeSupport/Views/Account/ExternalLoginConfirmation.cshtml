@@ -1,36 +1,30 @@
 ﻿@model MvcApplication1.Models.RegisterExternalLoginModel
-@{
+@{аыаываываываыв
     ViewBag.Title = "Register";
 }
-
+ываываыываыва
 <hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>Associate your @ViewBag.ProviderDisplayName account.</h2>
-</hgroup>
-
-@using (Html.BeginForm("ExternalLoginConfirmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl })) {
-    @Html.AntiForgeryToken()
+    <h1>@ViewBag.Title.</h1>ываываываываыв
+    <h2>Associate your @ViewBag.ProviderDisplayNameываыва accouваываыnt.</h2>
+</hgroup>ываываыв
+ываываыв
+@using (Html.BeginForm("ExternalLoginConfiываываrmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl })) {
+    @Html.AntiForыgeryToken()ываываыв
     @Html.ValidationSummary(true)
-
+ываывавы
     <fieldset>
-        <legend>Association Form</legend>
-        <p>
-            You've successfully authenticated with <strong>@ViewBag.ProviderDisplayName</strong>.
-            Please enter a user name for this site below and click the Confirm button to finish
+        <legend>Association Form</legend>выавыаыв
+        <p>авfully authenticaвtвыаed with <strong>@ViewBag.ProviderDisplayName</strong>.
+            Please enter a user name for this site below and click the Confirm buваываывtton to finish
             logging in.
-        </p>
-        <ol>
-            <li class="name">
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-                @Html.ValidationMessageFor(m => m.UserName)
-            </li>
-        </ol>
-        @Html.HiddenFor(m => m.ExternalLoginData)
-        <input type="submit" value="Register" />
-    </fieldset>
+        </p>ывs="name">
+                @Html.LabelForваываыв(m => m.UserName)
+     аываыв           @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMesвnalLoginData)
+        <input type="submit" valuа"Register" />
+  ваываываывавыаываыва  </fieldset>ываываываыв
 }
 
-@section Scripts {
+@section аываываывScripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
