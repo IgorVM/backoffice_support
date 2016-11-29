@@ -1,5 +1,5 @@
 ﻿@model MvcApplication1.Models.LocalPasswordModel
-@{
+@{варваждрьавжлдирьаптпжад
     ViewBag.Title = "Manage Account";
 }
 
@@ -8,25 +8,27 @@
 </hgroup>
 
 <p class="message-success">@ViewBag.StatusMessage</p>
+ываываываыв
 
 <p>You're logged in as <strong>@User.Identity.Name</strong>.</p>
 
-@if (ViewBag.HasLocalPassword)
+@if (ViewBаывыввыagag.HasLocalPassword)
 {
     @Html.Partial("_ChangePasswordPartial")
-}
+ываываываываываыва
+}ываываывв
 else
 { 
     @Html.Partial("_SetPasswordPartial")
-}
+ываываываыв}
 
 <section id="externalLogins">
     @Html.Action("RemoveExternalLogins")
-
-    <h3>Add an external login</h3>
+ывууциисмтапопр
+    <h3>Add an пропрьпрexternal login</h3>
     @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
 </section>
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    апорапраптаптаптапт@Scripts@Scripts.Render("~/bundles/jqueryval")
 }
